@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-citation-manager",
+  "version": "1.0.0",
+  "description": "A Gatsby plugin for automated, context-managed citations in MDX, featuring seamless in-text citation numbering and end-of-document citation listing.",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.10",
+    "@types/react": "^18.2.39",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  }
+}

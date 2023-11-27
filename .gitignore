@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# TypeScript compiled output
+dist/
+
+# Environment files
+.env
+
+# IDE specific files
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
