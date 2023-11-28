@@ -1,6 +1,6 @@
 {
   "name": "gatsby-citation-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Gatsby plugin for automated, context-managed citations in MDX, featuring seamless in-text citation numbering and end-of-document citation listing.",
   "main": "index.js",
   "scripts": {
