@@ -2,7 +2,8 @@
 node_modules/
 
 # TypeScript compiled output
-dist/
+*.js
+!src/**/*.js  # Include any .js files that are part of the source
 
 # Environment files
 .env
