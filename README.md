@@ -27,7 +27,7 @@ Then, integrate the plugin into your Gatsby site. In your Gatsby project's confi
 
 ## Example usage
 
-In your MDX content:
+### MDX content
 
     import { Citation, CitationsList } from 'gatsby-citation-manager';
 
@@ -57,7 +57,7 @@ In your MDX content:
 
     <CitationsList citationFormat="bibtex" />
 
-HTML output:
+### HTML output
 
     ...
     <h2>About some stuff</h2>
@@ -97,17 +97,17 @@ HTML output:
 
 ## Citation parameters
 
-The CitationData interface defines the structure of the data that you can pass to the <Citation> component. Here's a breakdown of each property:
+The `CitationData` interface defines the structure of the data that you can pass to the `<Citation>` component. Here's a breakdown of each property:
 
-- id: An optional unique identifier for the citation.
-- type: The type of the source being cited. This could be "book", "article-journal", "webpage", etc.
-- title: The title of the source.
-- URL: The URL of the source, if applicable.
-- accessed: The date the source was accessed. This should be an object with a 'date-parts' property, which is an array of arrays. Each inner array represents a date, with the year, month, and day in that order.
-- author: An array of objects representing the authors of the source. Each object should have a family property for the author's family name and a given property for the author's given name.
-- 'container-title': The title of the container holding the source. For example, for a journal article, this would be the title of the journal.
-- issued: The date the source was issued or published. This is formatted the same way as the accessed property.
-- keywords: An array of keywords related to the source.
+- `id`: An optional unique identifier for the citation.
+- `type`: The type of the source being cited. This could be 'book', 'article-journal', 'webpage', etc.
+- `title`: The title of the source.
+- `URL`: The URL of the source, if applicable.
+- `accessed`: The date the source was accessed. This should be an object with a `date-parts`` property, which is an array of arrays. Each inner array represents a date, with the year, month, and day in that order.
+- `author`: An array of objects representing the authors of the source. Each object should have a family property for the author's family name and a given property for the author's given name.
+- `container-title`: The title of the container holding the source. For example, for a journal article, this would be the title of the journal.
+- `issued`: The date the source was issued or published. This is formatted the same way as the accessed property.
+- `keywords`: An array of keywords related to the source.
 
 Here's an example of how you might use these properties to create a citation for a journal article with multiple authors:
 
