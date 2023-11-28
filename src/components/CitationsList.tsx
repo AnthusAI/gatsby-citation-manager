@@ -20,7 +20,7 @@ const CitationsList: React.FC<CitationsListProps> = ({ citationFormat }) => {
   const { citations } = context;
 
   return (
-    <ol>
+    <ol className="citationslist">
       {citations.map((citation, index) => {
         const citationData = {
           ...citation,

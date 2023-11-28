@@ -67,7 +67,7 @@ Then, integrate the plugin into your Gatsby site. In your Gatsby project's confi
     <p>
       During the 1920s, luxury car manufacturers often used 'The Great Gatsby' in their advertisements, despite the novel not being published until 1925.<sup><a href="#citation-2">2</a></sup>
     </p>
-    <ol>
+    <ol class="citationslist">
       <li
         id="citation-1"
       >
