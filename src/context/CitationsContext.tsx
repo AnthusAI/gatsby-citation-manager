@@ -1,9 +1,11 @@
+// src/context/CitationsContext.tsx
 import React, { createContext, useState, ReactNode } from 'react';
+import { CitationData } from '../types/CitationData';
 
 interface CitationsContextType {
-  citations: string[];
-  addCitation: (source: string) => void;
-  getCitationNumber: (source: string) => number;
+  citations: CitationData[];
+  addCitation: (data: CitationData) => void;
+  getCitationNumber: (title: string) => number;
 }
 
 export const CitationsContext = createContext<CitationsContextType | null>(null);
@@ -13,16 +15,14 @@ interface CitationsProviderProps {
 }
 
 export const CitationsProvider: React.FC<CitationsProviderProps> = ({ children }) => {
-  const [citations, setCitations] = useState<string[]>([]);
+  const [citations, setCitations] = useState<CitationData[]>([]);
 
-  const addCitation = (source: string) => {
-    if (!citations.includes(source)) {
-      setCitations([...citations, source]);
-    }
+  const addCitation = (data: CitationData) => {
+    setCitations((prevCitations) => [...prevCitations, data]);
   };
 
-  const getCitationNumber = (source: string) => {
-    return citations.indexOf(source) + 1;
+  const getCitationNumber = (title: string) => {
+    return citations.findIndex(citation => citation.title === title) + 1;
   };
 
   return (
