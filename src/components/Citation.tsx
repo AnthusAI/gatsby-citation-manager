@@ -27,7 +27,7 @@ const Citation: React.FC<CitationProps> = ({ data }) => {
   // Get the citation number from the context
   const citationNumber = getCitationNumber(data.title);
 
-  return <sup className="citation"><a href={`#citation-${citationNumber}`}>{citationNumber}</a></sup>;
+  return <span className="citation"><a href={`#citation-${citationNumber}`}>{citationNumber}</a></span>;
 };
 
 export default Citation;

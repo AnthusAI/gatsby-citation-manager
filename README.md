@@ -62,10 +62,10 @@ Then, integrate the plugin into your Gatsby site. In your Gatsby project's confi
     ...
     <h2>About some stuff</h2>
     <p>
-      F. Scott Fitzgerald, author of 'The Great Gatsby,' once entered a look-alike contest for himself and surprisingly, did not win.<sup><a href="#citation-1">1</a></sup>
+      F. Scott Fitzgerald, author of 'The Great Gatsby,' once entered a look-alike contest for himself and surprisingly, did not win.<span className="citation"><a href="#citation-1">1</a></span>
     </p>
     <p>
-      During the 1920s, luxury car manufacturers often used 'The Great Gatsby' in their advertisements, despite the novel not being published until 1925.<sup><a href="#citation-2">2</a></sup>
+      During the 1920s, luxury car manufacturers often used 'The Great Gatsby' in their advertisements, despite the novel not being published until 1925.<span className="citation"><a href="#citation-2">2</a></span>
     </p>
     <ol class="citationslist">
       <li
